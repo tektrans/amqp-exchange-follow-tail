@@ -9,14 +9,12 @@ load_dotenv()
 VERSION="v0.0.1"
 
 parser = argparse.ArgumentParser(
-    description="""
-AMPQ exchange consumer.
-
-Just like "tail --follow" on AMQP exchange.
-You can use it to monitor published log on AMQP.
-This progam obey ".env" file, so you can put your environment variable on ".env" file.
-    """,
-    epilog="""https://github.com/tektrans/amqp-exchange-follow-tail"""
+    description="AMPQ exchange consumer (https://github.com/tektrans/amqp-exchange-follow-tail)",
+    epilog="""
+        Just like "tail --follow" on AMQP exchange.
+        You can use it to monitor published log on AMQP.
+        This progam obey ".env" file, so you can put your environment variable on ".env" file.
+    """
 )
 
 parser.add_argument(
