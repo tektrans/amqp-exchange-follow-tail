@@ -19,14 +19,14 @@ parser.add_argument(
     '-u',
     '--amqp-url',
     required=not os.environ.get('AMQP_URL', None),
-    help="AMQP url, can be set by AMQP_URL environment"
+    help="AMQP url, can be set by AMQP_URL environment."
 )
 
 parser.add_argument(
     '-e',
     '--exchange',
     required=True,
-    help="AMQP exchange name, can be set by AMQP_EXCHANGE environment"
+    help="AMQP exchange name, can be set by AMQP_EXCHANGE environment."
 )
 
 args = parser.parse_args()
