@@ -1,7 +1,37 @@
 # amqp-exchange-follow-tail
 AMPQ exchange consumer, like tail --follow
 
+## How to install
+
+### Clone this repository:
+```shell
+git clone https://github.com/tektrans/amqp-exchange-follow-tail
+```
+
+### Create python virtual environment (optional but recommended)
+```shell
+python -m venv .venv
+```
+
+### Activate virtual environment (if you are using python virtual environment)
+#### On linux:
+```shell
+source .venv/bin/activate
+```
+
+#### On windows:
+```shell
+.venv\Scripts\activate.bat
+```
+
+### Install requirements
+```shell
+pip install -r requirements.txt
+```
+
 ## Usage
+If you are using python virtual environment, don't forget to activate it first.
+
 ```shell
 python amqp-exchange-follow-tail.py --help
 ```
