@@ -68,4 +68,3 @@ so you can put your environment variable on ".env" file.
 
 # DOTENV sample
 Copy "[sample.env](sample.env)" to .env, and adapt your environments.
-

@@ -166,7 +166,7 @@ def callback(ch, method, properties, body):
             print(body, file=output_file_handle)
         else:
             print(f" [x] {method.routing_key}:{body}", file=output_file_handle)
-            
+
     if output_file != '-':
         output_file_handle.flush()
 
