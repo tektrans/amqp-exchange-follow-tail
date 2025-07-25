@@ -26,7 +26,7 @@ parser.add_argument(
     '-e',
     '--exchange',
     required=True,
-    help="AMQP exchange name, , can be set by AMQP_EXCHANGE environment"
+    help="AMQP exchange name, can be set by AMQP_EXCHANGE environment"
 )
 
 args = parser.parse_args()
