@@ -6,6 +6,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+VERSION="v0.0.1"
+
 parser = argparse.ArgumentParser(
     description="AMPQ exchange consumer",
     epilog="""
@@ -28,5 +30,8 @@ parser.add_argument(
     required=True,
     help="AMQP exchange name, can be set by AMQP_EXCHANGE environment."
 )
+
+parser.add_argument('--version', action='version', version=f"%(prog)s {VERSION}")
+
 
 args = parser.parse_args()
