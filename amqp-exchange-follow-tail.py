@@ -9,7 +9,7 @@ import pika
 
 load_dotenv()
 
-VERSION="v1.0.0"
+VERSION="v1.0.1"
 
 # init variables by environment values
 amqp_url = os.environ.get('AMQP_URL', None)
