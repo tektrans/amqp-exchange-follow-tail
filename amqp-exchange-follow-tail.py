@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 load_dotenv()
 
 parser = argparse.ArgumentParser(
-    prog="amqp-echange-follow-tail",
     description="AMPQ exchange consumer",
     epilog="""
 Just like "tail --follow" on AMQP exchange.
