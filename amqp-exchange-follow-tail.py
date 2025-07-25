@@ -167,8 +167,7 @@ def callback(ch, method, properties, body):
         else:
             print(f" [x] {method.routing_key}:{body}", file=output_file_handle)
 
-    if output_file != '-':
-        output_file_handle.flush()
+    output_file_handle.flush()
 
 channel.basic_consume(
     queue=queue_name,
